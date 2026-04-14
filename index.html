@@ -3,7 +3,7 @@
     <head>
         <title> Poker App First Brainstorm </title>
         <meta charset="UTF-8">
-        <link rel="icon" href="dachshund_icon.jpg" type="img/jpeg"/>
+        <link rel="icon" href="dachshund_icon.jpg" type="img/jpeg">
     </head>
     <body>
         <main>
@@ -53,27 +53,27 @@
 
         <section>
             <h4>Matt's Technical Notes:</h4>
-            <span>
 
-                <ul>
-                    <li>The small and big blind are to the left of the player with the dealer button in order, and the button shifts clockwise before each hand.</li>
-                    <li>Before the flop, players take turns in clockwise fashion starting with the player to the left of the small blind. During subsequent betting rounds,
-                        actions starts with the player to the left of the button and the dealer is last to act.</li>
-                    <li>There needs to be a section in the middle of the table for the community cards and pot. In front of each player, a little stack of chips and their hole cards if they have not folded.</li>
-                    <li>A 30 second timer for each player's turn. After the time runs out the player's hand is folded.</li>
-                    <li>The card shuffling algorithm needs to be sufficient to ensure game fairness.</li>
-                    <li>The logic to determine hand strengths and winning hand(s) is likely to be the most intricate part of the implementation.</li> 
-                    <li><a href="https://dribbble.com/tags/poker-ui" target="_blank">Here</a> is the link to another app's UI.</li>
-                </ul>
-            </span>
+            <ul>
+                <li>The small and big blind are to the left of the player with the dealer button in order, and the button shifts clockwise before each hand.</li>
+                <li>Before the flop, players take turns in clockwise fashion starting with the player to the left of the small blind. During subsequent betting rounds,
+                    actions starts with the player to the left of the button and the dealer is last to act.</li>
+                <li>There needs to be a section in the middle of the table for the community cards and pot. In front of each player, a little stack of chips and their hole cards if they have not folded.</li>
+                <li>A 30 second timer for each player's turn. After the time runs out the player's hand is folded.</li>
+                <li>The card shuffling algorithm needs to be sufficient to ensure game fairness.</li>
+                <li>The logic to determine hand strengths and winning hand(s) is likely to be the most intricate part of the implementation.</li> 
+                <li><a href="https://dribbble.com/tags/poker-ui" target="_blank">Here</a> is the link to another app's UI.</li>
+            </ul>
         </section>
 
         <section>
 
-            <h4>Form to submit additional ideas between meetings.</h4>
+            <span>
+                <h4>Form to submit additional ideas between meetings.</h4>
+            </span> 
 
             <form method="post">
-                <label> Name: <input type="text" name="name" list="names" placeholder="Just your first name"/> </label>
+                <label> Name: <input type="text" name="name" list="names" placeholder="Just your first name"> </label>
                 <datalist id="names">
                     <option value="Alex">
                     <option value="Daniel">
@@ -85,14 +85,14 @@
                     <option value="Frontend Developer">Frontend Developer</option>
                     <option value="Backend Developer">Backend Developer</option>
                 </select>
-                <label> Date <input type="date" name="date"/> </label>
+                <label> Date <input type="date" name="date"> </label>
                 <button>Save</button>
             </form>
             <form method="Post" name="domain">
                 <fieldset>
                     <legend>Idea domain:</legend>
-                        <label> <input type="checkbox" value="UI" /> UI </label>
-                        <label> <input type="checkbox" value="Backend"/> Backend </label> 
+                        <label> <input type="checkbox" value="UI"> UI </label>
+                        <label> <input type="checkbox" value="Backend"> Backend </label> 
                 </fieldset>
             </form>
             <form method="post" name="idea">
@@ -112,9 +112,9 @@
                 <p>Below are some stock assets related to the app.</p>
             </details>
             <h4>Poker Chips Image</h4>
-            <img src="chips.jpg">
+            <img src="chips.jpg" alt="Image of poker chips.">
             <h4>Poker Chips Sound</h4>
-            <audio src="chips_sound.mp3" type="audio/mp3" controls>Your browser does not support audio.</audio>
+            <audio controls src="chips_sound.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
             <h4>Poker Chips Video</h4>
             <video controls src="chips_video.mp4" width="640" height="360">Your browser does not support video.</video>
         </section>
