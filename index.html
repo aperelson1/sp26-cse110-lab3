@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Poker App First Brainstorm
+        </title>
+    </head>
+    <body>
+        <h1>
+            Poker App
+        </h1>
+        <h2>
+            First Brainstorm
+        </h2>
+        <h3>
+            April 13th, 2026
+        </h3>
+        <h4>
+            Attendance:
+        </h4>
+        <ul>
+            <li>Alex Perelson, meeting notetaker</li>
+            <li>Daniel Gesmer</li>
+            <li>Andy Mac</li>
+            <li>Matt Condor</li>
+        </ul>
+
+        <h4>Meeting Agenda:</h4>
+        <p>Build a list of requirements for the app.</p>
+
+        <h4>Meeting Minutes:</h4>
+        <ol>
+            <li>Introductions (some members have met previously)</li>
+            <li>Meeting leader Daniel states the meeting's purpose and asks if there are any questions or concerns. Everyone ready to start.</li>
+            <li>Andy defines the rules of the game and pulls up another company's app for everyone to see.</li>
+            <li>Matt jots down important features that need careful implementation which are included in the file below.</li>
+            <li>Meeting adjourns and everyone agrees to meet again in two days.</li>
+        </ol>
+
+        <h4>Matt's Technical Notes:</h4>
+        <ul>
+            <li>The small and big blind are to the left of the player with the dealer button in order, and the button shifts clockwise before each hand.</li>
+            <li>Before the flop, players take turns in clockwise fashion starting with the player to the left of the small blind. During subsequent betting rounds,
+                actions starts with the player to the left of the button and the dealer is last to act.</li>
+            <li>There needs to be a section in the middle of the table for the community cards and pot. In front of each player, a little stack of chips and their hole cards if they have not folded.</li>
+            <li>A 30 second timer for each player's turn. After the time runs out the player's hand is folded.</li>
+            <li>The card shuffling algorithm needs to be sufficient to ensure game fairness.</li>
+            <li>The logic to determine hand strengths and winning hand(s) is likely to be the most intricate part of the implementation.</li> 
+        </ul>
+        <h4>Form to submit additional ideas between meetings.</h4>
+        <form method="post">
+            <label> Name: <input type="text" name="name" /> </label>
+            <label> Date <input type="date" name="date"/> </label>
+            <button>Save</button>
+        </form>
+        <form method="Post" name="domain">
+            <fieldset>
+                <legend>Idea domain:</legend>
+                    <label> <input type="checkbox" value="UI" /> UI </label>
+                    <label> <input type="checkbox" value="Backend"/> Backend </label> 
+            </fieldset>
+        </form>
+        <form method="post" name="idea">
+            <fieldset>
+                <legend>Is the idea related to a <em>Current</em> or <em>New</em> feature?</legend>
+                    <label> <input type="radio" name="radio"> Current </label>
+                    <label> <input type="radio" name="radio"> New </label>
+        
+            <label>Idea:</label> <br>
+            <textarea type="textarea" name="textarea" rows="4" cols="50" /> </textarea>
+            <button> Submit </button>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
