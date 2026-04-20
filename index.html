@@ -4,40 +4,41 @@
         <title> Poker App First Brainstorm </title>
         <meta charset="UTF-8">
         <link rel="icon" href="dachshund_icon.jpg" type="img/jpeg">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <main>
-            <header>
-                <h1>
+            <header class="main_heading">
+                <h1 class="sub-heading">
                     Poker App
                 </h1>
                 <hr>
             </header>
             <nav></nav>
-            <h2>
+            <h2 class="sub-heading">
                 First Brainstorm
             </h2>
-            <h3>
+            <h3 class="sub-heading">
                 April 13th, 2026
             </h3>
-            <h4>
+            <h4 class="sub-heading">
                 Attendance:
             </h4>
-            <ul>
+            <ul id="participants">
                 <li>Alex Perelson, <i>meeting notetaker</i> </li>
                 <li>Daniel Gesmer</li>
                 <li>Andy Mac</li>
                 <li>Matt Condor</li>
             </ul>
 
-            <h4>Meeting Agenda:</h4>
+            <h4 class="sub-heading">Meeting Agenda:</h4>
             <p>Build a list of requirements for the app.</p>
 
         </main>
 
         <section>
 
-            <h4>Meeting Minutes:</h4>
+            <h4 class="sub-heading">Meeting Minutes:</h4>
 
             <div>
                 <ol>
@@ -52,7 +53,7 @@
         </section>
 
         <section>
-            <h4>Matt's Technical Notes:</h4>
+            <h4 class="sub-heading">Matt's Technical Notes:</h4>
 
             <ul>
                 <li>The small and big blind are to the left of the player with the dealer button in order, and the button shifts clockwise before each hand.</li>
@@ -69,7 +70,7 @@
         <section>
 
             <span></span>
-            <h4>Form to submit additional ideas between meetings.</h4>
+            <h4 class="sub-heading">Form to submit additional ideas between meetings.</h4>
 
             <form method="post">
                 <label> Name: <input type="text" name="name" list="names" placeholder="Just your first name"> </label>
@@ -84,7 +85,7 @@
                     <option value="Frontend Developer">Frontend Developer</option>
                     <option value="Backend Developer">Backend Developer</option>
                 </select>
-                <label> Date <input type="date" name="date"> </label>
+                <label> Date: <input type="date" name="date"> </label>
                 <button>Save</button>
             </form>
             <form method="Post" name="domain">
@@ -110,12 +111,20 @@
                 <summary>Click to expand</summary>
                 <p>Below are some stock assets related to the app.</p>
             </details>
-            <h4>Poker Chips Image</h4>
-            <img src="chips.jpg" alt="Image of poker chips.">
-            <h4>Poker Chips Sound</h4>
-            <audio controls src="chips_sound.mp3">Your browser does not support audio.</audio>
-            <h4>Poker Chips Video</h4>
-            <video controls src="chips_video.mp4" width="640" height="360">Your browser does not support video.</video>
+            <div class="flex-media">
+                <div>
+                    <h4 class="sub-heading">Poker Chips Image</h4>
+                    <img src="chips.jpg" alt="Image of poker chips.">
+                </div>
+                <div>
+                    <h4 class="sub-heading">Poker Chips Sound</h4>
+                    <audio controls src="chips_sound.mp3">Your browser does not support audio.</audio>
+                </div>
+                <div>
+                    <h4 class="sub-heading">Poker Chips Video</h4>
+                    <video controls src="chips_video.mp4" width="640" height="360">Your browser does not support video.</video>
+                </div>
+            </div>
         </section>
         <footer> <p>This website is for internal use only. Please do not share this URL with anyone.</p> </footer>
         

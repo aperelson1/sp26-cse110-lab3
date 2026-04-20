@@ -1,0 +1,236 @@
+/* this is the main stylesheet for index.html  */
+
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* CSS variables with fallbacks */
+:root {
+    --accent: #5A9FD4;
+    --heading: rgb(15, 30, 80);
+}
+
+/* universal selector */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Merriweather', serif;
+    width: 100%; /* relative unit: % */
+}
+
+/* class selectors */
+.sub-heading {
+    color: var(--heading, rgb(15, 30, 80)); /* CSS variable with fallback */
+}
+
+/* id selectors */
+#participants {
+    background-color: #B4D2F0;
+    display: grid;
+    width: 300px;
+    align-content: center;
+}
+
+/* element selectors */
+h1, h2, h3 {
+    text-align: center;
+}
+
+header {
+    background-color: hsl(207, 60%, 88%); /* hsl color */
+    padding: 0.3cm; /* absolute unit: cm */
+}
+
+hr {
+    background-color: color(srgb 0.353 0.624 0.831); /* wider-gamut color */
+    border: none;
+    height: 2px;
+    margin-top: 4mm; /* absolute unit: mm */
+    margin-bottom: 4mm;
+}
+
+h4 {
+    color: color-mix(in srgb, #0F1E50 80%, white 20%); /* color-mix */
+}
+
+section {
+    border-style: solid;
+    border-color: #A0C3E6;
+    border-width: 1px;
+    border-radius: 4px;
+    border: 1px solid #A0C3E6; /* shorthand border */
+    margin: 10px auto; /* shorthand margin + auto */
+    padding: 12px 16px; /* shorthand padding */
+    max-width: 900px;
+    min-width: 280px;
+}
+
+main {
+    margin-top: 10px; /* longhand margin */
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px; /* longhand padding */
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 900px;
+    min-width: 280px;
+}
+
+ul {
+    display: grid;
+    align-content: center;
+    height: auto;
+    width: 30em; /* relative unit: em */
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    max-width: 640px;
+    min-width: 200px;
+    max-height: 50vh; /* relative unit: vh */
+}
+
+audio {
+    display: block;
+}
+
+nav {
+    display: none;
+}
+
+summary {
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer {
+    position: sticky; /* second position value */
+    bottom: 0;
+    background-color: hsl(210, 50%, 30%);
+    color: white;
+    text-align: center;
+    padding: 10pt; /* absolute unit: pt */
+}
+
+form {
+    position: relative;
+}
+
+/* flexbox container - needs 3+ children in HTML */
+.flex-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* attribute selectors */
+[name=domain], [name=idea] {
+    display: inline;
+}
+
+[name=title] {
+    text-decoration: underline;
+}
+
+body p {
+    color: #4A4A4A;
+}
+
+/* combinators */
+form > label {
+    margin: 10px;
+    padding: 10px;
+}
+
+label ~ label {
+    padding: 20px;
+}
+
+textarea + button {
+    margin: 10px;
+}
+
+h4.sub-heading {
+    text-align: left;
+}
+
+/* pseudo-classes */
+p:hover {
+    color: #1E3A6E;
+}
+
+a:hover {
+    color: var(--accent, #5A9FD4);
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #3a7ab5;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* :has() selector */
+section:has(form) {
+    background-color: #dceefb;
+}
+
+/* nested selectors */
+form {
+    & input {
+        border: 1px solid #B4D2F0;
+        border-radius: 4px;
+        padding: 6px;
+    }
+
+    & button {
+        background-color: var(--accent, #5A9FD4);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 14px;
+    }
+}
+
+/* media queries */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* relative unit: rem */
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    section {
+        margin: 6px;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    ul {
+        width: 80%;
+    }
+
+    section {
+        max-width: 95%;
+    }
+}
