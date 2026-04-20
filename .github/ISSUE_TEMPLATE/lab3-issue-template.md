@@ -7,10 +7,10 @@ assignees: aperelson1
 
 ---
 
-<h1>Lab 3 Issue<h1>
+# Lab 3 Issue
 
-<h2>Title:<h2>
+## Title:
 
-<h2>Description:<h3>
+## Description:
 
-<h2>Required skills:<h2>
+## Required skills:
