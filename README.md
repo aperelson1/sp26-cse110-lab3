@@ -1,3 +1,1 @@
-# Lab 2 - Starter
-
-https://aperelson1.github.io/Lab2_Starter/
+https://aperelson1.github.io/sp26-cse110-lab3/
